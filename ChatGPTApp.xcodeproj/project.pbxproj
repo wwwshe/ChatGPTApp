@@ -12,6 +12,9 @@
 		CA4807522969A0E000A42CA4 /* ChatMyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4807512969A0E000A42CA4 /* ChatMyCell.swift */; };
 		CA4807542969A0EC00A42CA4 /* ChatAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4807532969A0EC00A42CA4 /* ChatAICell.swift */; };
 		CA4807572969A12800A42CA4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4807562969A12800A42CA4 /* ViewModel.swift */; };
+		CA4DD6942969BB16007B0AD9 /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = CA4DD6932969BB16007B0AD9 /* RxKeyboard */; };
+		CA4DD6972969BE07007B0AD9 /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = CA4DD6962969BE07007B0AD9 /* RxGesture */; };
+		CA4DD69A2969BFE4007B0AD9 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CA4DD6992969BFE4007B0AD9 /* Toast */; };
 		CAFE751A2969874900846395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE75192969874900846395 /* AppDelegate.swift */; };
 		CAFE751C2969874900846395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE751B2969874900846395 /* SceneDelegate.swift */; };
 		CAFE751E2969874900846395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE751D2969874900846395 /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA48074B296998D800A42CA4 /* RxCocoa in Frameworks */,
+				CA4DD6942969BB16007B0AD9 /* RxKeyboard in Frameworks */,
+				CA4DD6972969BE07007B0AD9 /* RxGesture in Frameworks */,
+				CA4DD69A2969BFE4007B0AD9 /* Toast in Frameworks */,
 				CA480748296997F800A42CA4 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +113,9 @@
 			packageProductDependencies = (
 				CA480747296997F800A42CA4 /* OpenAISwift */,
 				CA48074A296998D800A42CA4 /* RxCocoa */,
+				CA4DD6932969BB16007B0AD9 /* RxKeyboard */,
+				CA4DD6962969BE07007B0AD9 /* RxGesture */,
+				CA4DD6992969BFE4007B0AD9 /* Toast */,
 			);
 			productName = OpenAIApp;
 			productReference = CAFE75162969874900846395 /* ChatGPTApp.app */;
@@ -140,6 +149,9 @@
 			packageReferences = (
 				CA480746296997F800A42CA4 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 				CA480749296998D800A42CA4 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				CA4DD6922969BB16007B0AD9 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+				CA4DD6952969BE07007B0AD9 /* XCRemoteSwiftPackageReference "RxGesture" */,
+				CA4DD6982969BFE4007B0AD9 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = CAFE75172969874900846395 /* Products */;
 			projectDirPath = "";
@@ -414,6 +426,30 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		CA4DD6922969BB16007B0AD9 /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CA4DD6952969BE07007B0AD9 /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		CA4DD6982969BFE4007B0AD9 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -426,6 +462,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CA480749296998D800A42CA4 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
+		};
+		CA4DD6932969BB16007B0AD9 /* RxKeyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4DD6922969BB16007B0AD9 /* XCRemoteSwiftPackageReference "RxKeyboard" */;
+			productName = RxKeyboard;
+		};
+		CA4DD6962969BE07007B0AD9 /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4DD6952969BE07007B0AD9 /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
+		};
+		CA4DD6992969BFE4007B0AD9 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4DD6982969BFE4007B0AD9 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

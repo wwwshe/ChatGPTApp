@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class ChatMyCell: UITableViewCell {
     @IBOutlet weak var backView: UIView! {
@@ -16,6 +17,13 @@ class ChatMyCell: UITableViewCell {
     }
     
     @IBOutlet weak var label: UILabel!
+    
+    var disposeBag = DisposeBag()
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

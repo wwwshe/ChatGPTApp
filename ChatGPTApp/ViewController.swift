@@ -8,6 +8,9 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxKeyboard
+import RxGesture
+import Toast
 
 final class ViewController: UIViewController {
     
@@ -44,6 +47,8 @@ final class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
     let disposeBag = DisposeBag()
     let viewModel = ViewModel()
     
@@ -72,6 +77,13 @@ final class ViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+        tableView.rx.tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [weak self] _ in
+                self?.view.endEditing(true)
+            })
+            .disposed(by: disposeBag)
+        
         infoButton.rx
             .tap
             .throttle(.milliseconds(200),
@@ -87,6 +99,12 @@ final class ViewController: UIViewController {
                 self?.present(alert, animated: true)
             })
             .disposed(by: disposeBag)
+        
+        RxKeyboard.instance.visibleHeight
+          .drive(onNext: { [weak self] keyboardVisibleHeight in
+              self?.bottomConstraint.constant = keyboardVisibleHeight
+          })
+          .disposed(by: disposeBag)
         
         viewModel.items
             .observe(on: MainScheduler.asyncInstance)
@@ -112,7 +130,10 @@ final class ViewController: UIViewController {
     }
     
     func searchAction() {
-        guard let text = self.viewModel.text.value else { return }
+        guard let text = self.viewModel.text.value?.trimmingCharacters(in: .whitespacesAndNewlines), text.isEmpty == false else {
+            self.view.makeToast("검색어를 입력해주세요.", position: .top)
+            return
+        }
         
         self.viewModel.requestAI(text: text)
         self.viewModel.appendItems(item: ViewModel.Item(type: .my, text: text))
@@ -125,14 +146,32 @@ final class ViewController: UIViewController {
                 fatalError()
             }
             cell.label.text = item.text
+            cell.label.rx.tapGesture()
+                .when(.recognized)
+                .subscribe(onNext: { [weak self] _ in
+                    UIPasteboard.general.string = cell.label.text
+                    self?.view.makeToast("텍스트가 클립보드에 복사 되었습니다.", position: .top)
+                })
+                .disposed(by: cell.disposeBag)
             return cell
         case .ai:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChatAICell") as? ChatAICell else {
                 fatalError()
             }
             cell.label.text = item.text
+            cell.label.rx.tapGesture()
+                .when(.recognized)
+                .subscribe(onNext: { [weak self] _ in
+                    UIPasteboard.general.string = cell.label.text
+                    self?.view.makeToast("텍스트가 클립보드에 복사 되었습니다.", position: .top)
+                })
+                .disposed(by: cell.disposeBag)
             return cell
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 
