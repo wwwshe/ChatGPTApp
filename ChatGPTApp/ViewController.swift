@@ -33,6 +33,13 @@ final class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var resetButton: UIButton! {
+        didSet {
+            resetButton.layer.cornerRadius = 4
+            resetButton.layer.masksToBounds = true
+        }
+    }
+    
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var textField: UITextField! {
         didSet {
@@ -95,6 +102,29 @@ final class ViewController: UIViewController {
                 let okAction = UIAlertAction(title: "확인", style: .default) { _ in 
                     alert.dismiss(animated: true)
                 }
+                alert.addAction(okAction)
+                self?.present(alert, animated: true)
+            })
+            .disposed(by: disposeBag)
+        
+        resetButton
+            .rx
+            .tap
+            .throttle(.milliseconds(200),
+                      latest: false,
+                      scheduler: MainScheduler.asyncInstance)
+            .observe(on: MainScheduler.asyncInstance)
+            .bind(onNext: { [weak self] _ in
+                let alert = UIAlertController(title: "리셋", message: "이때까지 검색한 히스토리를 삭제합니다.", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "확인", style: .default) { [weak self] _ in
+                    alert.dismiss(animated: true)
+                    self?.viewModel.resetUserDefault()
+                }
+                
+                let cancelAction = UIAlertAction(title: "취소", style: .cancel) { _ in
+                    alert.dismiss(animated: true)
+                }
+                alert.addAction(cancelAction)
                 alert.addAction(okAction)
                 self?.present(alert, animated: true)
             })

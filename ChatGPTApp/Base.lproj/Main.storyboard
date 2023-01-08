@@ -20,6 +20,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAW-em-tHO">
                                 <rect key="frame" x="0.0" y="59" width="393" height="54"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oei-et-4tj">
+                                        <rect key="frame" x="269.33333333333331" y="9.6666666666666714" width="53.666666666666686" height="35"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="리셋">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIc-yL-h8M">
                                         <rect key="frame" x="339" y="10" width="38" height="34.333333333333336"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
@@ -32,8 +40,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="4IU-4f-eFt"/>
+                                    <constraint firstItem="oei-et-4tj" firstAttribute="centerY" secondItem="eAW-em-tHO" secondAttribute="centerY" id="8Nd-G4-zjI"/>
                                     <constraint firstItem="dIc-yL-h8M" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eAW-em-tHO" secondAttribute="leading" id="BvS-wD-C1j"/>
                                     <constraint firstItem="dIc-yL-h8M" firstAttribute="centerY" secondItem="eAW-em-tHO" secondAttribute="centerY" id="QpZ-Ah-Uaf"/>
+                                    <constraint firstItem="dIc-yL-h8M" firstAttribute="leading" secondItem="oei-et-4tj" secondAttribute="trailing" constant="16" id="gYB-7Q-mmf"/>
                                     <constraint firstAttribute="trailing" secondItem="dIc-yL-h8M" secondAttribute="trailing" constant="16" id="pNW-O4-sQm"/>
                                 </constraints>
                             </view>
@@ -183,6 +193,7 @@
                         <outlet property="bottomConstraint" destination="f5g-aA-bZB" id="qpC-vt-sGc"/>
                         <outlet property="indicator" destination="y8O-wN-78C" id="IKd-MG-nGP"/>
                         <outlet property="infoButton" destination="dIc-yL-h8M" id="TxV-Qc-tne"/>
+                        <outlet property="resetButton" destination="oei-et-4tj" id="fcf-AC-bkp"/>
                         <outlet property="searchButton" destination="PGh-SM-ed2" id="LN1-mV-gka"/>
                         <outlet property="searchView" destination="sqa-1R-b7d" id="JcZ-kB-uRx"/>
                         <outlet property="tableView" destination="ncj-Ci-SaN" id="Pov-KB-fuh"/>
