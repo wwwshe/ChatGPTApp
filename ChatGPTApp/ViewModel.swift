@@ -36,7 +36,7 @@ final class ViewModel {
     
     let items = BehaviorRelay<[Item]>(value: [Item(type: .my, text: "궁금한 점을 물어보세요!")])
     let text = BehaviorRelay<String?>(value: nil)
-    let openAI = OpenAISwift(authToken: "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")
+    let openAI = OpenAISwift(authToken: "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")
     let isLoading = PublishSubject<Bool>()
     
     let userDefault = UserDefaults.standard
