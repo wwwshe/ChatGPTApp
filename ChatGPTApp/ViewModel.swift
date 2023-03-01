@@ -36,15 +36,23 @@ final class ViewModel {
     
     let items = BehaviorRelay<[Item]>(value: [Item(type: .my, text: "궁금한 점을 물어보세요!")])
     let text = BehaviorRelay<String?>(value: nil)
-    let openAI = OpenAISwift(authToken: "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")
+    var apiKey: String {
+        ProcessInfo.processInfo.environment["OPENAI_API_KEY"]!
+    }
+    var openAI: OpenAISwift!
     let isLoading = PublishSubject<Bool>()
     
     let userDefault = UserDefaults.standard
     let disposeBag = DisposeBag()
     
     init() {
+        set()
         self.items.accept(getItems)
         bind()
+    }
+    
+    func set() {
+        openAI = OpenAISwift(authToken: apiKey)
     }
     
     func bind() {
