@@ -22,6 +22,7 @@
 		B0D6BC9457CA7C2475267316 /* Toast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F45E8813624A6976A3B0DD /* Toast.framework */; platformFilter = ios; };
 		B122C99FA864267CCD2C767C /* RxCocoaRuntime.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C91B462D618C74423CA3FE9E /* RxCocoaRuntime.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9CABC0BABA825FDD1D06A61 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07305EC777882BCA87EDC921 /* RxCocoa.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC9FEE4913EE22CD9D824F29 /* ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60040033B2D743BD07612845 /* ChatGPTTests.swift */; };
 		BCB27C3C446DCB00F726786C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563DD7D30C8749053098089C /* RxSwift.framework */; platformFilter = ios; };
 		C6CB092F35C08FB313AA1D8F /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3083A52E8EFF1C058ACBA88 /* RxRelay.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB50800708D96FFC56F18B9B /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F93CB8A03FF5B4AC3F8318 /* RxGesture.framework */; platformFilter = ios; };
@@ -82,6 +83,7 @@
 		4B3B24D0CDF2D8CC7480356F /* RxKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFFB0606575565D76B79429 /* ChatGPTApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ChatGPTApp-Info.plist"; sourceTree = "<group>"; };
 		563DD7D30C8749053098089C /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60040033B2D743BD07612845 /* ChatGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTTests.swift; sourceTree = "<group>"; };
 		67F45E8813624A6976A3B0DD /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1021E78E111AA64CED57B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90843574D8267509FFDFEBCB /* ChatGPTProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTProtocol.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				7825CD3CC09071B3F0160F19 /* Resources */,
 				92D1E221AD60ADB90B73556C /* Sources */,
+				E9C47C846E8E3AD447D20AD9 /* Tests */,
 			);
 			path = ChatGPTApp;
 			sourceTree = "<group>";
@@ -272,6 +275,14 @@
 				06039D8AB2644FC698D4DCE4 /* ChatGPTAppTests-Info.plist */,
 			);
 			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		E9C47C846E8E3AD447D20AD9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				60040033B2D743BD07612845 /* ChatGPTTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		F5510F181189D2073106612B /* Project */ = {
@@ -380,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9FEE4913EE22CD9D824F29 /* ChatGPTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

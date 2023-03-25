@@ -13,6 +13,6 @@ protocol ChatGPTProtocol {
 
 extension ChatGPTProtocol {
     var apiKey: String {
-       return "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"
+       return "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"
     }
 }
