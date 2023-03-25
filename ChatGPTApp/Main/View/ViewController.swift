@@ -57,7 +57,19 @@ final class ViewController: UIViewController {
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     let disposeBag = DisposeBag()
-    let viewModel = ViewModel()
+    var viewModel: ViewModelProtocol!
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        let session = URLSession(configuration: .default)
+        self.viewModel = ViewModel(session: session)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        let session = URLSession(configuration: .default)
+        self.viewModel = ViewModel(session: session)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -166,10 +178,10 @@ final class ViewController: UIViewController {
         }
         
         self.viewModel.requestAI(text: text)
-        self.viewModel.appendItems(item: ViewModel.Item(type: .my, text: text))
+        self.viewModel.appendItems(item: Item(type: .my, text: text))
     }
     
-    func configureItems(tableView: UITableView, item: ViewModel.Item) -> UITableViewCell {
+    func configureItems(tableView: UITableView, item: Item) -> UITableViewCell {
         switch item.type {
         case .my:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChatMyCell") as? ChatMyCell else {

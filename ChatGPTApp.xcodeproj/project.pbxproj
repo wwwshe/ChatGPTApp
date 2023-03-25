@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA480748296997F800A42CA4 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA480747296997F800A42CA4 /* OpenAISwift */; };
 		CA48074B296998D800A42CA4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA48074A296998D800A42CA4 /* RxCocoa */; };
 		CA4807522969A0E000A42CA4 /* ChatMyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4807512969A0E000A42CA4 /* ChatMyCell.swift */; };
 		CA4807542969A0EC00A42CA4 /* ChatAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4807532969A0EC00A42CA4 /* ChatAICell.swift */; };
@@ -15,6 +14,18 @@
 		CA4DD6942969BB16007B0AD9 /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = CA4DD6932969BB16007B0AD9 /* RxKeyboard */; };
 		CA4DD6972969BE07007B0AD9 /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = CA4DD6962969BE07007B0AD9 /* RxGesture */; };
 		CA4DD69A2969BFE4007B0AD9 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = CA4DD6992969BFE4007B0AD9 /* Toast */; };
+		CA80531229CEFF730007E08F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80531129CEFF730007E08F /* API.swift */; };
+		CA80531429CEFF970007E08F /* API+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80531329CEFF970007E08F /* API+Path.swift */; };
+		CA80531729CF00710007E08F /* ChatGPTRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80531629CF00710007E08F /* ChatGPTRes.swift */; };
+		CA80531929CF00BB0007E08F /* API+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80531829CF00BB0007E08F /* API+Header.swift */; };
+		CA80531B29CF01600007E08F /* API+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80531A29CF01600007E08F /* API+Method.swift */; };
+		CA80531D29CF01930007E08F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80531C29CF01930007E08F /* HTTPMethod.swift */; };
+		CA80532129CF02990007E08F /* API+BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80532029CF02990007E08F /* API+BaseURL.swift */; };
+		CA80532329CF04590007E08F /* API+Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80532229CF04590007E08F /* API+Body.swift */; };
+		CA80532629CF0C520007E08F /* ChatGPTProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80532529CF0C520007E08F /* ChatGPTProtocol.swift */; };
+		CA80532C29CF0CF80007E08F /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80532B29CF0CF80007E08F /* ViewModelProtocol.swift */; };
+		CA80532F29CF0D2A0007E08F /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80532E29CF0D2A0007E08F /* ItemType.swift */; };
+		CA80533129CF0D3C0007E08F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80533029CF0D3C0007E08F /* Item.swift */; };
 		CAFE751A2969874900846395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE75192969874900846395 /* AppDelegate.swift */; };
 		CAFE751C2969874900846395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE751B2969874900846395 /* SceneDelegate.swift */; };
 		CAFE751E2969874900846395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE751D2969874900846395 /* ViewController.swift */; };
@@ -27,6 +38,18 @@
 		CA4807512969A0E000A42CA4 /* ChatMyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMyCell.swift; sourceTree = "<group>"; };
 		CA4807532969A0EC00A42CA4 /* ChatAICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAICell.swift; sourceTree = "<group>"; };
 		CA4807562969A12800A42CA4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CA80531129CEFF730007E08F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CA80531329CEFF970007E08F /* API+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Path.swift"; sourceTree = "<group>"; };
+		CA80531629CF00710007E08F /* ChatGPTRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTRes.swift; sourceTree = "<group>"; };
+		CA80531829CF00BB0007E08F /* API+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Header.swift"; sourceTree = "<group>"; };
+		CA80531A29CF01600007E08F /* API+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Method.swift"; sourceTree = "<group>"; };
+		CA80531C29CF01930007E08F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CA80532029CF02990007E08F /* API+BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+BaseURL.swift"; sourceTree = "<group>"; };
+		CA80532229CF04590007E08F /* API+Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Body.swift"; sourceTree = "<group>"; };
+		CA80532529CF0C520007E08F /* ChatGPTProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTProtocol.swift; sourceTree = "<group>"; };
+		CA80532B29CF0CF80007E08F /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		CA80532E29CF0D2A0007E08F /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
+		CA80533029CF0D3C0007E08F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CAFE75162969874900846395 /* ChatGPTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFE75192969874900846395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFE751B2969874900846395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +69,6 @@
 				CA4DD6942969BB16007B0AD9 /* RxKeyboard in Frameworks */,
 				CA4DD6972969BE07007B0AD9 /* RxGesture in Frameworks */,
 				CA4DD69A2969BFE4007B0AD9 /* Toast in Frameworks */,
-				CA480748296997F800A42CA4 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +82,83 @@
 				CA4807512969A0E000A42CA4 /* ChatMyCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CA80531029CEFF600007E08F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CA80531529CF00660007E08F /* Model */,
+				CA80531129CEFF730007E08F /* API.swift */,
+				CA80532029CF02990007E08F /* API+BaseURL.swift */,
+				CA80531329CEFF970007E08F /* API+Path.swift */,
+				CA80531829CF00BB0007E08F /* API+Header.swift */,
+				CA80531A29CF01600007E08F /* API+Method.swift */,
+				CA80532229CF04590007E08F /* API+Body.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CA80531529CF00660007E08F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA80531629CF00710007E08F /* ChatGPTRes.swift */,
+				CA80531C29CF01930007E08F /* HTTPMethod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA80532429CF0C3B0007E08F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CA80532529CF0C520007E08F /* ChatGPTProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CA80532729CF0C7F0007E08F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CA80532A29CF0CE10007E08F /* Protocol */,
+				CA80532829CF0CA30007E08F /* View */,
+				CA80532929CF0CB30007E08F /* ViewModel */,
+				CA80532D29CF0D120007E08F /* Model */,
+				CAFE751F2969874900846395 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CA80532829CF0CA30007E08F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA4807552969A0F200A42CA4 /* Cell */,
+				CAFE751D2969874900846395 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA80532929CF0CB30007E08F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA4807562969A12800A42CA4 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA80532A29CF0CE10007E08F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CA80532B29CF0CF80007E08F /* ViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CA80532D29CF0D120007E08F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA80532E29CF0D2A0007E08F /* ItemType.swift */,
+				CA80533029CF0D3C0007E08F /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CAFE750D2969874900846395 = {
@@ -81,12 +180,11 @@
 		CAFE75182969874900846395 /* ChatGPTApp */ = {
 			isa = PBXGroup;
 			children = (
-				CA4807552969A0F200A42CA4 /* Cell */,
+				CA80532729CF0C7F0007E08F /* Main */,
+				CA80532429CF0C3B0007E08F /* Protocol */,
+				CA80531029CEFF600007E08F /* Network */,
 				CAFE75192969874900846395 /* AppDelegate.swift */,
 				CAFE751B2969874900846395 /* SceneDelegate.swift */,
-				CAFE751D2969874900846395 /* ViewController.swift */,
-				CA4807562969A12800A42CA4 /* ViewModel.swift */,
-				CAFE751F2969874900846395 /* Main.storyboard */,
 				CAFE75222969874A00846395 /* Assets.xcassets */,
 				CAFE75242969874A00846395 /* LaunchScreen.storyboard */,
 				CAFE75272969874A00846395 /* Info.plist */,
@@ -111,7 +209,6 @@
 			);
 			name = ChatGPTApp;
 			packageProductDependencies = (
-				CA480747296997F800A42CA4 /* OpenAISwift */,
 				CA48074A296998D800A42CA4 /* RxCocoa */,
 				CA4DD6932969BB16007B0AD9 /* RxKeyboard */,
 				CA4DD6962969BE07007B0AD9 /* RxGesture */,
@@ -147,7 +244,6 @@
 			);
 			mainGroup = CAFE750D2969874900846395;
 			packageReferences = (
-				CA480746296997F800A42CA4 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 				CA480749296998D800A42CA4 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				CA4DD6922969BB16007B0AD9 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
 				CA4DD6952969BE07007B0AD9 /* XCRemoteSwiftPackageReference "RxGesture" */,
@@ -180,12 +276,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA80532C29CF0CF80007E08F /* ViewModelProtocol.swift in Sources */,
 				CAFE751E2969874900846395 /* ViewController.swift in Sources */,
+				CA80531B29CF01600007E08F /* API+Method.swift in Sources */,
+				CA80532329CF04590007E08F /* API+Body.swift in Sources */,
+				CA80532629CF0C520007E08F /* ChatGPTProtocol.swift in Sources */,
 				CA4807522969A0E000A42CA4 /* ChatMyCell.swift in Sources */,
 				CAFE751A2969874900846395 /* AppDelegate.swift in Sources */,
+				CA80531429CEFF970007E08F /* API+Path.swift in Sources */,
+				CA80532129CF02990007E08F /* API+BaseURL.swift in Sources */,
 				CAFE751C2969874900846395 /* SceneDelegate.swift in Sources */,
+				CA80533129CF0D3C0007E08F /* Item.swift in Sources */,
 				CA4807572969A12800A42CA4 /* ViewModel.swift in Sources */,
 				CA4807542969A0EC00A42CA4 /* ChatAICell.swift in Sources */,
+				CA80531D29CF01930007E08F /* HTTPMethod.swift in Sources */,
+				CA80531929CF00BB0007E08F /* API+Header.swift in Sources */,
+				CA80531729CF00710007E08F /* ChatGPTRes.swift in Sources */,
+				CA80531229CEFF730007E08F /* API.swift in Sources */,
+				CA80532F29CF0D2A0007E08F /* ItemType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,14 +518,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CA480746296997F800A42CA4 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		CA480749296998D800A42CA4 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -453,11 +553,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CA480747296997F800A42CA4 /* OpenAISwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA480746296997F800A42CA4 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
-		};
 		CA48074A296998D800A42CA4 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CA480749296998D800A42CA4 /* XCRemoteSwiftPackageReference "RxSwift" */;
