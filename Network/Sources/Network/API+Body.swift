@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension API {
+public extension API {
     var body: Data {
         var body = [String: Any]()
       

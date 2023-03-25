@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension API {
+public extension API {
     var path: String {
         switch self {
         case .chatGPT:

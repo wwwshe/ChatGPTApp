@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension API {
+public extension API {
     var header: [String: String] {
         var header = [String: String]()
         switch self {

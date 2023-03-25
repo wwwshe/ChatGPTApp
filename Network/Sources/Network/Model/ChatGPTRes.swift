@@ -12,17 +12,17 @@
 import Foundation
 
 // MARK: - ChatGPTRes
-struct ChatGPTRes: Codable {
-    let id, object: String?
-    let created: Int?
-    let model: String?
-    let choices: [Choice]
-    let usage: Usage?
+public struct ChatGPTRes: Codable {
+    public let id, object: String?
+    public let created: Int?
+    public let model: String?
+    public let choices: [Choice]
+    public let usage: Usage?
 }
 
 // MARK: ChatGPTRes convenience initializers and mutators
 
-extension ChatGPTRes {
+public extension ChatGPTRes {
     init(data: Data) throws {
         self = try newJSONDecoder().decode(ChatGPTRes.self, from: data)
     }
@@ -66,10 +66,10 @@ extension ChatGPTRes {
 }
 
 // MARK: - Choice
-struct Choice: Codable {
-    let text: String?
-    let index: Int?
-    let finishReason: String?
+public struct Choice: Codable {
+    public let text: String?
+    public let index: Int?
+    public let finishReason: String?
 
     enum CodingKeys: String, CodingKey {
         case text, index
@@ -79,7 +79,7 @@ struct Choice: Codable {
 
 // MARK: Choice convenience initializers and mutators
 
-extension Choice {
+public extension Choice {
     init(data: Data) throws {
         self = try newJSONDecoder().decode(Choice.self, from: data)
     }
@@ -117,8 +117,8 @@ extension Choice {
 }
 
 // MARK: - Usage
-struct Usage: Codable {
-    let promptTokens, completionTokens, totalTokens: Int?
+public struct Usage: Codable {
+    public let promptTokens, completionTokens, totalTokens: Int?
 
     enum CodingKeys: String, CodingKey {
         case promptTokens = "prompt_tokens"
@@ -129,7 +129,7 @@ struct Usage: Codable {
 
 // MARK: Usage convenience initializers and mutators
 
-extension Usage {
+public extension Usage {
     init(data: Data) throws {
         self = try newJSONDecoder().decode(Usage.self, from: data)
     }
@@ -168,7 +168,7 @@ extension Usage {
 
 // MARK: - Helper functions for creating encoders and decoders
 
-func newJSONDecoder() -> JSONDecoder {
+public func newJSONDecoder() -> JSONDecoder {
     let decoder = JSONDecoder()
     if #available(iOS 10.0, OSX 10.12, tvOS 10.0, watchOS 3.0, *) {
         decoder.dateDecodingStrategy = .iso8601
@@ -176,7 +176,7 @@ func newJSONDecoder() -> JSONDecoder {
     return decoder
 }
 
-func newJSONEncoder() -> JSONEncoder {
+public func newJSONEncoder() -> JSONEncoder {
     let encoder = JSONEncoder()
     if #available(iOS 10.0, OSX 10.12, tvOS 10.0, watchOS 3.0, *) {
         encoder.dateEncodingStrategy = .iso8601

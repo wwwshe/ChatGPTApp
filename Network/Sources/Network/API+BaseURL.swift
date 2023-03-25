@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension API {
+public extension API {
     var baseURL: String {
         return "https://api.openai.com"
     }

@@ -13,6 +13,6 @@ protocol ChatGPTProtocol {
 
 extension ChatGPTProtocol {
     var apiKey: String {
-        ProcessInfo.processInfo.environment["OPENAI_API_KEY"]!
+       return "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"
     }
 }

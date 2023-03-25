@@ -7,11 +7,11 @@
 
 import Foundation
 
-@frozen enum API {
+@frozen public enum API {
     case chatGPT(token: String, msg: String)
 }
 
-extension API {
+public extension API {
     var url: URL {
         return URL(string: baseURL + path)!
     }
