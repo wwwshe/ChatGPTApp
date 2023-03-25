@@ -73,7 +73,10 @@ final class ViewModel: ViewModelProtocol, ChatGPTProtocol {
     /// - Parameter text: 요청 문구
     func requestAI(text: String) {
         isLoading.onNext(true)
-        requestChatGPT(text: text)
+        let api = API.chatGPT(token: apiKey, msg: text)
+        let requester = Requester(api: api,
+                                  session: session)
+        requester.requestChatGPT()
             .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .background))
             .observe(on: MainScheduler.asyncInstance)
             .subscribe { [weak self] result in
@@ -93,34 +96,5 @@ final class ViewModel: ViewModelProtocol, ChatGPTProtocol {
                 self?.appendItems(item: Item(type: .ai, text: error.localizedDescription))
             }
             .disposed(by: disposeBag)
-    }
-    
-    /// ChatGTP 요청
-    /// - Parameter text: 요청 문구
-    /// - Returns: 결과
-    private func requestChatGPT(text: String) -> Single<Result<ChatGPTRes, URLError>> {
-        let api = API.chatGPT(token: apiKey, msg: text)
-        
-        let request = NSMutableURLRequest(url: api.url)
-        request.httpMethod = api.method.rawValue
-        request.allHTTPHeaderFields = api.header
-        request.httpBody = api.body
-        
-        return session.rx.data(request: request as URLRequest)
-            .map { data in
-                do {
-                    let response = String(data: data, encoding: .utf8)
-                    debugPrint("[response] \n \(response ?? "no response")")
-                    let chatGPTRes = try ChatGPTRes(data: data)
-                    return .success(chatGPTRes)
-                } catch {
-                    return
-                        .failure(URLError(.cannotParseResponse))
-                }
-            }
-            .catch { _ in
-                    .just(Result.failure(URLError(.cannotLoadFromNetwork)))
-            }
-            .asSingle()
     }
 }
