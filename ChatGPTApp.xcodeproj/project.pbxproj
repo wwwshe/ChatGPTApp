@@ -3,34 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06FA61293D14E6B4D069A92F /* RxSwift_RxRelay.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = BC12BE4453AF275F8A0D69A6 /* RxSwift_RxRelay.bundle */; };
 		1384E665F969F6E5061E10CA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E002394545626CFACCDAFD4 /* Item.swift */; };
+		29B2B523EFBBE104157D4FF3 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3083A52E8EFF1C058ACBA88 /* RxRelay.framework */; };
 		2DFA658A3B205C4D04CEA025 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B5C0F2CFDF7E634D23E53 /* ViewModel.swift */; };
-		3147126648BA5ED6A58FD304 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 563DD7D30C8749053098089C /* RxSwift.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		41C31533BE773E76CC1F601A /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3490CD8480CFF1B515FCFE5 /* Network.framework */; platformFilter = ios; };
-		46B3D5D7FC75D971498D34EB /* RxKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3B24D0CDF2D8CC7480356F /* RxKeyboard.framework */; platformFilter = ios; };
+		30428725EA2157EF919D1A5D /* RxSwift_RxCocoaRuntime.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 89A22163819414E4676B0300 /* RxSwift_RxCocoaRuntime.bundle */; };
+		3147126648BA5ED6A58FD304 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 563DD7D30C8749053098089C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40AA3DCD07A3A5BD0EE8BA4A /* RxSwift_RxCocoa.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = 3109EA29831928566C916D63 /* RxSwift_RxCocoa.bundle */; };
+		453F6EF6C09D48E797B67D71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D4C22911DBD9081562AD67 /* SceneDelegate.swift */; };
+		46B3D5D7FC75D971498D34EB /* RxKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3B24D0CDF2D8CC7480356F /* RxKeyboard.framework */; };
 		47478F6D9E24DEF8294C92A2 /* ChatGPTProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90843574D8267509FFDFEBCB /* ChatGPTProtocol.swift */; };
+		50FC3A2858342668E2B0AC72 /* RxSwift_RxCocoa.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3109EA29831928566C916D63 /* RxSwift_RxCocoa.bundle */; };
 		59E1CDD40AD492CD3FAEB3DF /* ChatAICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFDA024183B63A51681ECD6 /* ChatAICell.swift */; };
 		5A60914A8E3872DB1ACEAA49 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B042C91EC7BF555AB7BFC5BD /* ViewModelProtocol.swift */; };
 		7D5165D1F64DE8649192A512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB23141FDCFEFD09A889B97F /* ViewController.swift */; };
 		8C2970E8E3A753086AB51CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB416F65FC5FED8A895187E0 /* Assets.xcassets */; };
-		91C3DE6DE927816C98F3C7F7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07305EC777882BCA87EDC921 /* RxCocoa.framework */; platformFilter = ios; };
+		91C3DE6DE927816C98F3C7F7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07305EC777882BCA87EDC921 /* RxCocoa.framework */; };
+		978945D0F6D0C29056891298 /* NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA77F66DECE14CBAD42F2C /* NetworkKit.framework */; };
 		AE00880EC593B4C765EFC199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14086B3EACE39DBE26F5487F /* Main.storyboard */; };
-		B0D6BC9457CA7C2475267316 /* Toast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F45E8813624A6976A3B0DD /* Toast.framework */; platformFilter = ios; };
-		B122C99FA864267CCD2C767C /* RxCocoaRuntime.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C91B462D618C74423CA3FE9E /* RxCocoaRuntime.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B9CABC0BABA825FDD1D06A61 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 07305EC777882BCA87EDC921 /* RxCocoa.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0D6BC9457CA7C2475267316 /* Toast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F45E8813624A6976A3B0DD /* Toast.framework */; };
+		B5CC14256620388914E3F6F9 /* RxCocoaRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91B462D618C74423CA3FE9E /* RxCocoaRuntime.framework */; };
 		BC9FEE4913EE22CD9D824F29 /* ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60040033B2D743BD07612845 /* ChatGPTTests.swift */; };
-		BCB27C3C446DCB00F726786C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563DD7D30C8749053098089C /* RxSwift.framework */; platformFilter = ios; };
-		C6CB092F35C08FB313AA1D8F /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3083A52E8EFF1C058ACBA88 /* RxRelay.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CB50800708D96FFC56F18B9B /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F93CB8A03FF5B4AC3F8318 /* RxGesture.framework */; platformFilter = ios; };
+		BCB27C3C446DCB00F726786C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563DD7D30C8749053098089C /* RxSwift.framework */; };
+		CB50800708D96FFC56F18B9B /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F93CB8A03FF5B4AC3F8318 /* RxGesture.framework */; };
 		CCCD7F13553A1E70DAF0BBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BF798BF087330D361E0AAD /* AppDelegate.swift */; };
+		D4278F687A1C2EB478F93937 /* Toast_Toast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FBA8CD2655EF2C4B7F4218E6 /* Toast_Toast.bundle */; };
 		D4EE0D66D892C1C34AA64554 /* ChatMyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9439B86252D250AA03994395 /* ChatMyCell.swift */; };
 		D5ADBBAC429D8744B3599AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FAE3990128E4E28CD9A912 /* LaunchScreen.storyboard */; };
+		DCB57B8C52231C58C70AD664 /* RxSwift_RxCocoaRuntime.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89A22163819414E4676B0300 /* RxSwift_RxCocoaRuntime.bundle */; };
 		DE96EE941F744492DE452F4B /* TuistAssets+ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ABF223332800FBF0285A2C /* TuistAssets+ChatGPTApp.swift */; };
 		DF4AF4A5DA55FF3D683A2A35 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF816DFEF104B216C20EA7 /* ItemType.swift */; };
+		E33D2A19D0F8A351A790DBC8 /* Toast_Toast.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = FBA8CD2655EF2C4B7F4218E6 /* Toast_Toast.bundle */; };
+		F05A316AB1B4B5D2577DED67 /* RxSwift_RxRelay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC12BE4453AF275F8A0D69A6 /* RxSwift_RxRelay.bundle */; };
 		FFE4D861046521CDB29985C8 /* TuistBundle+ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF8A9C1ACC7C9B6D8DBCFD /* TuistBundle+ChatGPTApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,13 +59,23 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B9CABC0BABA825FDD1D06A61 /* RxCocoa.framework in Embed Frameworks */,
-				B122C99FA864267CCD2C767C /* RxCocoaRuntime.framework in Embed Frameworks */,
-				C6CB092F35C08FB313AA1D8F /* RxRelay.framework in Embed Frameworks */,
 				3147126648BA5ED6A58FD304 /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC2DCF16ED10FF759962C40C /* Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstSubfolderSpec = 16;
+			files = (
+				40AA3DCD07A3A5BD0EE8BA4A /* RxSwift_RxCocoa.bundle in Dependencies */,
+				30428725EA2157EF919D1A5D /* RxSwift_RxCocoaRuntime.bundle in Dependencies */,
+				06FA61293D14E6B4D069A92F /* RxSwift_RxRelay.bundle in Dependencies */,
+				E33D2A19D0F8A351A790DBC8 /* Toast_Toast.bundle in Dependencies */,
+			);
+			name = Dependencies;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		F89109BCE67FD9DE79CED993 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -76,8 +94,10 @@
 		07305EC777882BCA87EDC921 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E8A717336B006DD7A32DA2 /* ChatGPTApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F93CB8A03FF5B4AC3F8318 /* RxGesture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxGesture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3109EA29831928566C916D63 /* RxSwift_RxCocoa.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwift_RxCocoa.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AF8A9C1ACC7C9B6D8DBCFD /* TuistBundle+ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+ChatGPTApp.swift"; sourceTree = "<group>"; };
 		3A7B5C0F2CFDF7E634D23E53 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		45D4C22911DBD9081562AD67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46ABF223332800FBF0285A2C /* TuistAssets+ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+ChatGPTApp.swift"; sourceTree = "<group>"; };
 		4AAF816DFEF104B216C20EA7 /* ItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		4B3B24D0CDF2D8CC7480356F /* RxKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,19 +106,22 @@
 		60040033B2D743BD07612845 /* ChatGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTTests.swift; sourceTree = "<group>"; };
 		67F45E8813624A6976A3B0DD /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D1021E78E111AA64CED57B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89A22163819414E4676B0300 /* RxSwift_RxCocoaRuntime.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwift_RxCocoaRuntime.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		90843574D8267509FFDFEBCB /* ChatGPTProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTProtocol.swift; sourceTree = "<group>"; };
 		9439B86252D250AA03994395 /* ChatMyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMyCell.swift; sourceTree = "<group>"; };
+		94AA77F66DECE14CBAD42F2C /* NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E002394545626CFACCDAFD4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AAFDA024183B63A51681ECD6 /* ChatAICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAICell.swift; sourceTree = "<group>"; };
 		B042C91EC7BF555AB7BFC5BD /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		BC12BE4453AF275F8A0D69A6 /* RxSwift_RxRelay.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwift_RxRelay.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3083A52E8EFF1C058ACBA88 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91B462D618C74423CA3FE9E /* RxCocoaRuntime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoaRuntime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB21AEA6674D5117F4FA9760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB416F65FC5FED8A895187E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D3490CD8480CFF1B515FCFE5 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8BF798BF087330D361E0AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB23141FDCFEFD09A889B97F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9C114659A1ABEAD078B4951 /* ChatGPTAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA8CD2655EF2C4B7F4218E6 /* Toast_Toast.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Toast_Toast.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +129,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41C31533BE773E76CC1F601A /* Network.framework in Frameworks */,
+				978945D0F6D0C29056891298 /* NetworkKit.framework in Frameworks */,
 				91C3DE6DE927816C98F3C7F7 /* RxCocoa.framework in Frameworks */,
+				B5CC14256620388914E3F6F9 /* RxCocoaRuntime.framework in Frameworks */,
 				CB50800708D96FFC56F18B9B /* RxGesture.framework in Frameworks */,
 				46B3D5D7FC75D971498D34EB /* RxKeyboard.framework in Frameworks */,
+				29B2B523EFBBE104157D4FF3 /* RxRelay.framework in Frameworks */,
 				BCB27C3C446DCB00F726786C /* RxSwift.framework in Frameworks */,
 				B0D6BC9457CA7C2475267316 /* Toast.framework in Frameworks */,
 			);
@@ -154,25 +179,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		2864CFD2CC784C704F7D8B76 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		336360B0B9B6235E6A5A1087 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				10E8A717336B006DD7A32DA2 /* ChatGPTApp.app */,
 				F9C114659A1ABEAD078B4951 /* ChatGPTAppTests.xctest */,
-				D3490CD8480CFF1B515FCFE5 /* Network.framework */,
+				94AA77F66DECE14CBAD42F2C /* NetworkKit.framework */,
 				07305EC777882BCA87EDC921 /* RxCocoa.framework */,
 				C91B462D618C74423CA3FE9E /* RxCocoaRuntime.framework */,
 				20F93CB8A03FF5B4AC3F8318 /* RxGesture.framework */,
 				4B3B24D0CDF2D8CC7480356F /* RxKeyboard.framework */,
 				C3083A52E8EFF1C058ACBA88 /* RxRelay.framework */,
+				3109EA29831928566C916D63 /* RxSwift_RxCocoa.bundle */,
+				89A22163819414E4676B0300 /* RxSwift_RxCocoaRuntime.bundle */,
+				BC12BE4453AF275F8A0D69A6 /* RxSwift_RxRelay.bundle */,
 				563DD7D30C8749053098089C /* RxSwift.framework */,
+				FBA8CD2655EF2C4B7F4218E6 /* Toast_Toast.bundle */,
 				67F45E8813624A6976A3B0DD /* Toast.framework */,
 			);
 			name = Products;
@@ -221,6 +243,7 @@
 				17EAA97661729F883A63D26F /* Main */,
 				CC5BC3179F9FBAF405089D63 /* Protocol */,
 				D8BF798BF087330D361E0AAD /* AppDelegate.swift */,
+				45D4C22911DBD9081562AD67 /* SceneDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -246,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				F5510F181189D2073106612B /* Project */,
-				2864CFD2CC784C704F7D8B76 /* Frameworks */,
 				336360B0B9B6235E6A5A1087 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -303,14 +325,17 @@
 			buildPhases = (
 				E1A95E33E354C2DC0A44D8B1 /* Sources */,
 				27A8EE6C7D198A0ECAB9F6D7 /* Resources */,
-				4A1B5D82C8A4244F128C12C3 /* Embed Frameworks */,
 				2AF65C3CC6512373E06CD1F6 /* Frameworks */,
+				4A1B5D82C8A4244F128C12C3 /* Embed Frameworks */,
+				DC2DCF16ED10FF759962C40C /* Dependencies */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ChatGPTApp;
+			packageProductDependencies = (
+			);
 			productName = ChatGPTApp;
 			productReference = 10E8A717336B006DD7A32DA2 /* ChatGPTApp.app */;
 			productType = "com.apple.product-type.application";
@@ -321,8 +346,8 @@
 			buildPhases = (
 				D9A71BE0892250F7957CF995 /* Sources */,
 				BD8316A8E91B40A5C07D178C /* Resources */,
-				F89109BCE67FD9DE79CED993 /* Embed Frameworks */,
 				ACA1FD22E28D364428434E95 /* Frameworks */,
+				F89109BCE67FD9DE79CED993 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +355,8 @@
 				0642EAB7DF55D83B2590B47B /* PBXTargetDependency */,
 			);
 			name = ChatGPTAppTests;
+			packageProductDependencies = (
+			);
 			productName = ChatGPTAppTests;
 			productReference = F9C114659A1ABEAD078B4951 /* ChatGPTAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -340,6 +367,7 @@
 		D13575BF1AD87DCC4479B39C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = jjw;
 				TargetAttributes = {
 					A0872A8ADD4DDED2FDDDB9D4 = {
@@ -348,7 +376,7 @@
 				};
 			};
 			buildConfigurationList = 16D50811FC7F9A3A72AC078E /* Build configuration list for PBXProject "ChatGPTApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -374,6 +402,10 @@
 				8C2970E8E3A753086AB51CFD /* Assets.xcassets in Resources */,
 				D5ADBBAC429D8744B3599AC6 /* LaunchScreen.storyboard in Resources */,
 				AE00880EC593B4C765EFC199 /* Main.storyboard in Resources */,
+				50FC3A2858342668E2B0AC72 /* RxSwift_RxCocoa.bundle in Resources */,
+				DCB57B8C52231C58C70AD664 /* RxSwift_RxCocoaRuntime.bundle in Resources */,
+				F05A316AB1B4B5D2577DED67 /* RxSwift_RxRelay.bundle in Resources */,
+				D4278F687A1C2EB478F93937 /* Toast_Toast.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +440,7 @@
 				7D5165D1F64DE8649192A512 /* ViewController.swift in Sources */,
 				2DFA658A3B205C4D04CEA025 /* ViewModel.swift in Sources */,
 				47478F6D9E24DEF8294C92A2 /* ChatGPTProtocol.swift in Sources */,
+				453F6EF6C09D48E797B67D71 /* SceneDelegate.swift in Sources */,
 				DE96EE941F744492DE452F4B /* TuistAssets+ChatGPTApp.swift in Sources */,
 				FFE4D861046521CDB29985C8 /* TuistBundle+ChatGPTApp.swift in Sources */,
 			);
@@ -449,16 +482,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = C99ZQQ8F46;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/ChatGPTApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = jjw.ChatGPTApp;
 				PRODUCT_NAME = ChatGPTApp;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -471,15 +519,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = C99ZQQ8F46;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/ChatGPTApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = jjw.ChatGPTApp;
 				PRODUCT_NAME = ChatGPTApp;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
@@ -492,21 +555,34 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/ChatGPTAppTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = jjw.ChatGPTAppTests;
 				PRODUCT_NAME = ChatGPTAppTests;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPTApp.app/ChatGPTApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPTApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGPTApp";
 				TEST_TARGET_NAME = ChatGPTApp;
 			};
 			name = Debug;
@@ -575,20 +651,33 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited)",
+					"$(SRCROOT)/Tuist/.build/checkouts/RxSwift/Sources/RxCocoaRuntime/include",
+				);
 				INFOPLIST_FILE = "Derived/InfoPlists/ChatGPTAppTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Tuist/.build/tuist-derived/RxCocoaRuntime/RxCocoaRuntime.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = jjw.ChatGPTAppTests;
 				PRODUCT_NAME = ChatGPTAppTests;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPTApp.app/ChatGPTApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatGPTApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatGPTApp";
 				TEST_TARGET_NAME = ChatGPTApp;
 			};
 			name = Release;

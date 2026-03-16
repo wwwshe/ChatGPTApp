@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import Network
+import NetworkKit
 
 final class ViewModel: ViewModelProtocol, ChatGPTProtocol {
     private var getItems: [Item] {
